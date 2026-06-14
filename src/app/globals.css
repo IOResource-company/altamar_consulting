@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
+/*
+  Altamar Consulting — design tokens
+  Brand: editorial, restrained, premium. "Stripe Press meets a private members' club."
+  Palette: deep ink/navy base · warm off-white paper · ONE accent (muted brass/gold).
+  Distinct from IO Resource teal (#2E7D96). Edit values here to re-skin the whole site.
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces */
+  --paper: #f6f2e9; /* warm off-white background */
+  --paper-dim: #efe9db; /* slightly deeper paper for alt sections */
+  --paper-card: #fcfaf4; /* card surface on paper */
+
+  /* Ink / navy */
+  --ink: #0f1e2e; /* deep ink/navy base */
+  --ink-soft: #1b2f43; /* raised surface on dark sections */
+  --ink-line: #2a3e54; /* hairline on dark */
+
+  /* Text */
+  --text: #14202c; /* primary text on paper */
+  --text-muted: #51606d; /* secondary text on paper (AA on paper) */
+  --text-on-ink: #f3eee2; /* primary text on ink */
+  --text-on-ink-muted: #adbccb; /* secondary text on ink (AA on ink) */
+
+  /* Accent — muted brass/gold */
+  --brass: #b08d57;
+  --brass-bright: #c8a46c; /* for use on dark backgrounds */
+  --brass-ink: #6f5126; /* brass dark enough for AA text on paper */
+
+  /* Lines */
+  --line: #ddd4c1; /* hairline on paper */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-paper-card: var(--paper-card);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-line: var(--ink-line);
+
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-on-ink: var(--text-on-ink);
+  --color-on-ink-muted: var(--text-on-ink-muted);
+
+  --color-brass: var(--brass);
+  --color-brass-bright: var(--brass-bright);
+  --color-brass-ink: var(--brass-ink);
+
+  --color-line: var(--line);
+
+  /* Fonts (wired in layout.tsx via next/font) */
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  /* offset anchor jumps for the sticky header */
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Editorial serif for display headings */
+.font-display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+/* Visible, accessible focus ring everywhere */
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
