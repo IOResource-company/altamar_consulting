@@ -221,11 +221,10 @@ export const team: TeamMember[] = [
     role: "Founding Partner — Agentic & Custom Builds",
     kind: "partner",
     focus: "Agents, automation, integrations",
-    bio: "Former Meta — agent orchestration and automation at scale. Builds the custom agents, enrichment pipelines and integrations that turn strategy into working systems.",
+    bio: "A Trinity College software engineer with 20+ years across Irish and international tech firms — the last eight at Meta, deploying agents at scale. Simon builds the custom agents, enrichment pipelines and integrations that turn strategy into working systems.",
     linkedin: "https://www.linkedin.com/in/simon-lewis-7b212a2a/",
     order: 2,
     published: true,
-    confirm: "Confirm exact Meta title and tenure.",
   },
   {
     name: "Marshall Taplits",
