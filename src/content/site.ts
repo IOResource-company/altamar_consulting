@@ -210,11 +210,10 @@ export const team: TeamMember[] = [
     role: "Founding Partner — AI Strategy & Implementation",
     kind: "partner",
     focus: "Strategy, implementation, governance",
-    bio: "Owner and MD of IO Resource, an Irish tech-distribution company he has run since 2002. Stephen has personally deployed AI across his own business — sales, finance, operations, governance and brand — and documented the playbook. He now advises owner-led firms on adopting AI that actually works. A Trinity College engineering graduate with an MBA. Sells judgement, not theory.",
+    bio: "Owner and MD of IO Resource, an Irish tech-distribution company. Stephen has personally deployed AI across his own business — sales, finance, operations, governance and brand — and documented the playbook. He now advises owner-led firms on adopting AI that actually works. A Trinity College engineering graduate with an MBA.",
     linkedin: "https://www.linkedin.com/in/stephen-browne-a6b153/",
     order: 1,
     published: true,
-    confirm: "Confirm Trinity College engineering degree + MBA wording.",
   },
   {
     name: "Simon Lewis",
