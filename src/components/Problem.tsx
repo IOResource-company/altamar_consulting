@@ -24,11 +24,11 @@ export function Problem() {
               and the team believing.
             </p>
             <p className="text-text">
-              We&apos;re operators, not theorists. Stephen runs a ~30-person Irish
-              SME and has deployed AI across sales, finance, operations and
-              governance — and written down the playbook. Simon built agentic
-              systems at scale at Meta. Behind them, a vetted network of senior
-              practitioners.
+              We&apos;re operators, not theorists. Stephen owns and runs IO
+              Resource, an Irish tech-distribution company, and has deployed AI
+              across sales, finance, operations and governance — and written
+              down the playbook. Simon built agentic systems at scale at Meta.
+              Behind them, a vetted network of senior practitioners.
             </p>
           </div>
         </div>

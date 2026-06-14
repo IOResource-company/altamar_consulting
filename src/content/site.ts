@@ -112,7 +112,7 @@ export const methodPlaybookUrl = "#contact"; // [CONFIRM — link to the full pl
 export const projects: Project[] = [
   {
     outcome: "AI embedded across sales, finance, ops and governance — no added headcount",
-    descriptor: "Our own ~30-person distribution SME",
+    descriptor: "Our own tech-distribution business",
     sector: "B2B distribution",
     flagship: true,
     challenge:
@@ -136,7 +136,7 @@ export const projects: Project[] = [
   },
   {
     outcome: "Board-pack prep cut from days to a scheduled, repeatable workflow",
-    descriptor: "~30-person distributor",
+    descriptor: "Irish tech distributor",
     sector: "B2B distribution",
     challenge:
       "Monthly board reporting pulled data from several systems by hand and ate days of senior time.",
@@ -210,10 +210,11 @@ export const team: TeamMember[] = [
     role: "Founding Partner — AI Strategy & Implementation",
     kind: "partner",
     focus: "Strategy, implementation, governance",
-    bio: "Operator-led adviser and MD of a ~30-person Irish tech-distribution SME (est. 2002). Has personally deployed AI across sales, finance, operations, governance and brand — and documented the playbook. Earlier: 13+ years in the Irish food industry (Ornua, Glanbia, Tirlán). Sells judgement, not theory.",
+    bio: "Owner and MD of IO Resource, an Irish tech-distribution company he has run since 2002. Stephen has personally deployed AI across his own business — sales, finance, operations, governance and brand — and documented the playbook. He now advises owner-led firms on adopting AI that actually works. A Trinity College engineering graduate with an MBA. Sells judgement, not theory.",
     linkedin: "https://www.linkedin.com/in/stephen-browne-a6b153/",
     order: 1,
     published: true,
+    confirm: "Confirm Trinity College engineering degree + MBA wording.",
   },
   {
     name: "Simon Lewis",
